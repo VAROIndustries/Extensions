@@ -69,6 +69,40 @@ A browser extension for [MakerManifest](https://makermanifest.co) that lets you 
 
 ---
 
+## NoteSmith — Web Clipper
+
+**Download:** [NoteSmith-WebClipper-Extension.zip](../../releases/latest)
+
+Clip any page — or just the part you selected — straight into a [NoteSmith](https://notesmith.io) note, without leaving the page you're reading.
+
+### What it does
+
+- **Clip the article, not the furniture** — finds the main content and leaves the nav, sidebars, footers and cookie banners behind
+- **Clip a selection** — highlight any part of a page and clip only that
+- **Right-click to clip** — "Clip selection to NoteSmith" straight from the context menu, no popup needed
+- **Keeps the structure** — headings, lists, quotes, code blocks, links, images and inline formatting all survive
+- **Pick where it lands** — choose the workspace and folder, and the extension remembers your last choice
+- **Every clip is sourced** — each note opens with a link back to the page it came from
+
+### How it works
+
+1. In NoteSmith, go to **Settings → API Keys** and create a key with the **Browser extension (clip only)** scope
+2. Paste it into the extension popup once to connect this browser
+3. Click the NoteSmith icon on any page, or right-click a selection
+
+A clip-only key can create notes and see your workspace and folder names. It **cannot read, edit or delete anything already in your account**, so a token sitting in a browser profile can't be used to read your notes. Revoking it in Settings disconnects the extension and nothing else.
+
+### Install (unpacked)
+
+1. Download `NoteSmith-WebClipper-Extension.zip` from [Releases](../../releases/latest)
+2. Unzip it
+3. Open Chrome/Edge → `chrome://extensions` → enable **Developer mode**
+4. Click **Load unpacked** → select the unzipped folder
+
+> Source code lives in the [VAROIndustries/notesmith](https://github.com/VAROIndustries/notesmith) repo under `browser-extension/`.
+
+---
+
 ## About
 
 Built by [VARØ Industries](https://varo.industries). All extensions are free and open source.
