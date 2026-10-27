@@ -103,6 +103,38 @@ A clip-only key can create notes and see your workspace and folder names. It **c
 
 ---
 
+## FairKeep — Add Show
+
+**Download:** [FairKeep-AddShow-Extension.zip](../../releases/latest)
+
+On a craft fair or market's web page, one click starts a new [FairKeep](https://fairkeep.app) application with the show's details already filled in.
+
+### What it does
+
+- **Reads the show page for you** — name, dates, city and state, booth fee, application deadline, apply link and organizer contact
+- **Fills blanks, you check and save** — nothing is saved until you press Save in FairKeep
+- **Puts the show on [FairFinder](https://fairfinder.cc)** — optional checkbox; new shows go in as a suggestion for review
+- **Reads only when you click** — only the tab you clicked on, only at that moment; the capture is deleted as soon as FairKeep picks it up
+
+### How it works
+
+1. Sign in to [fairkeep.app](https://fairkeep.app) in the same browser
+2. On a show's web page, click the FairKeep icon
+3. FairKeep opens in a new tab with a pre-filled application — check it and save
+
+With an Assistant pack, Claude reads the whole page (metered against the pack). Without one, a basic reader uses the page's title and event details. No token to paste — it uses your FairKeep sign-in.
+
+### Install (unpacked)
+
+1. Download `FairKeep-AddShow-Extension.zip` from [Releases](../../releases/latest)
+2. Unzip it
+3. Open Chrome/Edge → `chrome://extensions` → enable **Developer mode**
+4. Click **Load unpacked** → select the unzipped folder
+
+> Source code lives in the VAROIndustries/FairKeep repo under `extension/`.
+
+---
+
 ## About
 
 Built by [VARØ Industries](https://varo.industries). All extensions are free and open source.
